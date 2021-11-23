@@ -1,0 +1,37 @@
+.about{
+    height:100vh;
+    background-image: url("../../images/background-about.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.about__container{
+    width:80%;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.about__left img{
+    margin: 0px 0px 0px -120px;
+}
+.about__right h1{
+    font-size:56px;
+    margin-bottom: 30px;
+}
+.about__right p{
+    font-size:24px;
+    padding:15px 0px;
+}
+.about__right button{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px;
+    margin: 15px 0px;
+    font-size: 24px;
+}

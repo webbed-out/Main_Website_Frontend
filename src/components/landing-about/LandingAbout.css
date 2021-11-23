@@ -1,0 +1,39 @@
+.landing-about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.landing__about__left{
+    padding-right:30px;
+}
+.landing__about__left h1{
+    font-size: 56px;
+}
+.landing__about__left p{
+    font-size:24px;
+    padding: 20px 0px;
+    color: var(--lightdark);
+}
+
+.landing__about__left button{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+}
+.landing__about__left h1 span{
+    color: var(--primary);
+}
+.about__pics img{
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.35);
+}
+.about__pics .about__pic2{
+    margin-top:-100px;
+    margin-left:130px
+}

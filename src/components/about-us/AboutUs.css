@@ -1,0 +1,11 @@
+.about-us{
+
+    height:auto;
+}
+.about-us-landing{
+    height:100vh;
+    background-image: url("../../images/Vectors.png"),url("../../images/background-ui.png");
+    background-position:100% 0px,center;
+    background-repeat:no-repeat,repeat;
+    background-size: 60% 200%,auto;
+}

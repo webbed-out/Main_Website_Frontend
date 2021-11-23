@@ -1,0 +1,10 @@
+.social__media{
+    width:200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.social__media img{
+    border-radius: 50%;
+}

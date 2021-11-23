@@ -1,0 +1,12 @@
+.tech{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+    flex-shrink: 0;
+    width:12.5vw
+}
+.tech img{
+    transform: scale(0.5);
+}

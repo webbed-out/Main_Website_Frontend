@@ -1,0 +1,42 @@
+.person{
+    display: flex;
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.35);
+    width:100%;
+    margin: 50px 0px;
+}
+.person__photo{
+    flex: 1;
+}
+.person__photo img{
+    height:100%;
+    width:100%;
+}
+.person__description{
+    flex: 4;
+    
+}
+.person__description .person__header{
+    background-color: var(--secondary);
+
+    padding: 15px;
+    color: white;
+    font-size:32px;
+    font-weight: bold;
+}
+.person__description .person__desc{
+    padding: 15px;
+    font-size:24px;
+    background-color:var(--primary);
+    color: white;
+
+}
+.person__social__media{
+    width:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.person__social__media img{
+    border-radius: 50%;
+}

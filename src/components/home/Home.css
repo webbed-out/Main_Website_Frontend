@@ -1,0 +1,10 @@
+.home{
+    height:auto;
+}
+.landing__page{
+    height:100vh;
+    background-image: url("../../images/HomeVector.png"),url("../../images/background-ui.png");
+    background-position:100% 0px,center;
+    background-repeat:no-repeat,repeat;
+    background-size: 60% 110%,auto;
+}

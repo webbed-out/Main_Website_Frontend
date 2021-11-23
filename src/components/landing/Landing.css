@@ -1,0 +1,33 @@
+.home__page{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.home__left h1{
+    font-size: 56px;
+}
+.home__left p{
+    font-size:24px;
+    padding: 20px 0px;
+    color: var(--lightdark);
+}
+.home__page img{
+    margin: 0px -15px 0px 0px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+.home__left button{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+}
+.home__left h1 span{
+    color: var(--primary);
+}
