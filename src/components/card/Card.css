@@ -36,6 +36,9 @@
         padding:20px 0px;
         color:var(--secondary);
     }
+    .card p{
+        overflow-y: hidden;
+    }
     .card img{
         height:60px;
         width:60px;
