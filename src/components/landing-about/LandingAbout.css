@@ -16,6 +16,7 @@
     font-size:24px;
     padding: 20px 0px;
     color: var(--lightdark);
+    line-height: 25px;
 }
 
 .landing__about__left button{
@@ -31,7 +32,7 @@
     color: var(--primary);
 }
 .about__pics img{
-    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.35);
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.55);
 }
 .about__pics .about__pic2{
     margin-top:-100px;

@@ -13,8 +13,8 @@ function Person({name,content,image,reverse}) {
                     <div className="person__desc">
                         {content}
                         <div style={{justifyContent: 'flex-end',width:"100%"}} className="person__social__media">
-                            <img style={{marginRight:"20px"}} src={git}/>
                             <img src={linkedin}/>
+                            <img style={{marginLeft:"20px"}} src={git}/>
                         </div>
                     </div>
 

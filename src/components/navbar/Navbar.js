@@ -38,11 +38,30 @@ function Navbar() {
                         <div style={{width:"40%"}} className="navbar__items">
                             <Link onClick={()=>window.location.href="/"}>Home</Link>
                             <Link to="team" spy={true} smooth={true}>Team</Link>
-                            <div className="navbar__contact">
-                                <Link to="contact" spy={true} smooth={true}>Contact</Link>
-                            </div>
+                         
+                            <Link to="contact" spy={true} smooth={true}>
+                                <div className="navbar__contact">
+                                    <a>Contact</a>
+                                </div>
+                            </Link>
+                           
                         </div>
                            
+                        </>
+                    }{
+                        currPage === "our-work" && 
+                        <>
+                            <div style={{width:"40%"}} className="navbar__items">
+                                <Link onClick={()=>window.location.href="/"}>Home</Link>
+                                <Link to="work" spy={true} smooth={true}>Our Work</Link>
+                            
+                                <Link to="contact" spy={true} smooth={true}>
+                                    <div className="navbar__contact">
+                                        <a>Contact</a>
+                                    </div>
+                                </Link>
+                           
+                            </div>
                         </>
                     }
             </div>

@@ -18,5 +18,6 @@
 }
 .card p{
     text-align:center;
-    padding: 15px 0px
+    padding: 15px 0px;
+    line-height: 25px;
 }

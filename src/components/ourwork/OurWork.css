@@ -1,0 +1,7 @@
+.our-work-landing{
+    height:100vh;
+    background-image: url("../../images/WorkVector.png"),url("../../images/background-ui.png");
+    background-position:105% 0px,center;
+    background-repeat:no-repeat,repeat;
+    background-size: 60% 110%,auto;
+}

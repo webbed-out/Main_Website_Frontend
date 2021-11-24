@@ -1,0 +1,14 @@
+.project{
+    min-height: 100vh;
+    background-image: url('../../images/background-ui.png');
+    
+}
+.project__container{
+    width:80%;
+    margin: 0 auto;
+    padding:80px 0px;
+}
+.project__container h1{
+    font-size:56px;
+    text-align: center;
+}

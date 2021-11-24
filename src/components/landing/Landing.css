@@ -17,7 +17,7 @@
 .home__page img{
     margin: 0px -15px 0px 0px;
     box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
-    border-radius: 15px;
+    border-radius: 12px;
 }
 .home__left button{
     background-color: var(--primary);
@@ -27,6 +27,7 @@
     border: none;
     padding: 15px;
     font-size: 24px;
+    cursor: pointer;
 }
 .home__left h1 span{
     color: var(--primary);

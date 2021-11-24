@@ -24,6 +24,7 @@
 .about__right p{
     font-size:24px;
     padding:15px 0px;
+    line-height: 30px;
 }
 .about__right button{
     background-color: var(--primary);
@@ -34,4 +35,5 @@
     padding: 15px;
     margin: 15px 0px;
     font-size: 24px;
+    cursor: pointer;
 }

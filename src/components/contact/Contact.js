@@ -37,6 +37,12 @@ function Contact() {
                                 <Link to="team" spy={true} smooth={true}>Team</Link>
                         </>
                     }
+                    {
+                        currPage === "our-work" && <>
+                                <Link to="work" spy={true} smooth={true}>Our Work</Link>
+                        </>
+                    }
+
            
                 </div>
                 <div className="contact__details">
