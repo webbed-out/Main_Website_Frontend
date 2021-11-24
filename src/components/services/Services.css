@@ -106,7 +106,8 @@
         margin: 0px auto 0px auto;
         width: 80vw;
         position: relative;
-        box-shadow:0 8px 6px -6px rgba(0, 0, 0, 0.35)
+        box-shadow:0 8px 6px -6px rgba(0, 0, 0, 0.35);
+        overflow-y: hidden;
       
     }
     .tech__stack h1{
