@@ -38,3 +38,23 @@
     margin-top:-100px;
     margin-left:130px
 }
+
+@media only screen and (max-width: 800px){
+    .about__pics img{
+        display: none !important;
+    }
+    .landing__about__left h1{
+        font-size: 48px;
+    }
+    .landing__about__left{
+        padding: 0px;
+    }
+    .landing__about__left p{
+        font-size:18px;
+
+    }
+    .landing-about{
+        margin: 50px auto 0px auto !important;
+    }
+}
+

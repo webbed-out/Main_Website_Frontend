@@ -2,6 +2,8 @@ import React,{useEffect} from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import Logo from '../../images/Logo.png';
+import MenuIcon from '@mui/icons-material/Menu';
+import NavbarToggle from '../navbar-toggle/NavbarToggle';
 
 function Navbar() {
     useEffect(()=>{
@@ -14,10 +16,20 @@ function Navbar() {
     var currLocation = window.location.href;
     var currPage = currLocation.split("/").pop();
 
+    const handleToggle =()=>{
+        var SideBar = document.getElementById("sidebar");
+        SideBar.style.padding = "10%";
+        SideBar.style.width = "80vw";
+        
+    }
+
     return (
+        <>
+        <NavbarToggle/>
         <div id="home" className="navbar__container">
             <div className="navbar">
                 <img onClick={()=>window.location.href="/"} src={Logo} height="80px" width="280px"/>
+                    <div className="toggle" onClick={()=>handleToggle()}><MenuIcon  fontSize="large" style={{color:"rgb(30,30,30)"}}/></div>
                     { currPage === "" &&
                         <>
                             <div className="navbar__items">
@@ -66,6 +78,8 @@ function Navbar() {
                     }
             </div>
         </div>
+        </>
+        
     )
 }
 

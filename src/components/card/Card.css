@@ -21,3 +21,23 @@
     padding: 15px 0px;
     line-height: 25px;
 }
+
+@media only screen and (max-width: 800px){
+    .card{
+        height:300px;
+        width:80%;
+        margin: 15px 0px;
+        padding:20px;
+        box-shadow: 2px 4px 10px rgba(0,0,0,0.35);
+
+    }
+    .card h1{
+        font-size:24px;
+        padding:20px 0px;
+        color:var(--secondary);
+    }
+    .card img{
+        height:60px;
+        width:60px;
+    }
+}

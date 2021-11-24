@@ -13,3 +13,9 @@
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
 }
+
+@media only screen and (max-width: 800px){
+ *{
+    overflow-x: hidden !important;
+  }
+}

@@ -65,3 +65,38 @@
 .contact__details .contact__info{
     display: flex;
 }
+
+@media only screen and (max-width: 800px){
+    .contact__container{
+        flex-direction: column;
+    }
+    .contact__details,.contact__question,.contact__quick{
+        width:100%;
+    }
+    .contact{
+        height:auto;
+        
+    }
+    .contact__details h1{
+        text-align:center;
+    }
+    .contact__details p{
+        font-size:18px;
+    }
+    .contact__details,.contact__question,.contact__quick{
+        margin:10px 0px;
+    }
+    .contact__details .social__media{
+        width:80%;
+        margin: 0 auto;
+    }
+    .contact__question .form input {
+        width: 100%;
+    }
+    .contact__question .form textarea{
+        width:100%;
+    }.contact__container{
+       padding: 40px 0px;
+    }
+    
+}

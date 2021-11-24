@@ -12,3 +12,12 @@
     font-size:56px;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 800px){
+    .project__container h1{
+        font-size:48px;
+
+    }
+}

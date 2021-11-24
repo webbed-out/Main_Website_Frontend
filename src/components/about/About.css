@@ -37,3 +37,32 @@
     font-size: 24px;
     cursor: pointer;
 }
+@media only screen and (max-width: 800px){
+    .about__left img{
+        display: none;
+    }
+    .about{
+        height:100vh !important;
+        background-color:#0A2354;
+        background-image: none !important;
+        padding: 30px 0px;
+    }
+    .about__right h1{
+        font-size:44px;    
+    }
+    .about__right p{
+        font-size:18px;
+    }
+    .about__right button{
+        background-color: var(--primary);
+        border-radius: 5px;
+        margin: 15px 0px;
+        font-size: 18px;
+        
+    }
+    .about__right{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
