@@ -19,6 +19,7 @@ function Navbar() {
     const handleToggle =()=>{
         var SideBar = document.getElementById("sidebar");
         SideBar.style.padding = "10%";
+        
         SideBar.style.width = "80vw";
         
     }

@@ -1,6 +1,7 @@
 #sidebar{
     height:90vh;
     width:0;
+    overflow: hidden;
     background-color: var(--secondary);
     position: absolute;
     top: 0;
