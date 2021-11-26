@@ -5,6 +5,8 @@ import WorkPic1 from '../../images/WorkPic1.png';
 import WorkPic2 from '../../images/WorkPic2.png';
 
 function Work() {
+
+    
     return (
         <div className="work">
             <div className="work__container">

@@ -10,6 +10,7 @@ function Home() {
 
     return (
         <div className="home">
+            
             <div className="landing__page">
                 <Navbar/>
                 <Landing/>

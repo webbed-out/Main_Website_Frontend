@@ -29,7 +29,7 @@ function Navbar() {
         <NavbarToggle/>
         <div id="home" className="navbar__container">
             <div className="navbar">
-                <img onClick={()=>window.location.href="/"} src={Logo} height="80px" width="280px"/>
+                <img onClick={()=>window.location.href="/"} src={Logo} height="75px" width="260px"/>
                     <div className="toggle" onClick={()=>handleToggle()}><MenuIcon  fontSize="large" style={{color:"rgb(30,30,30)"}}/></div>
                     { currPage === "" &&
                         <>

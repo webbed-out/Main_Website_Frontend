@@ -47,12 +47,12 @@ function Contact() {
                 </div>
                 <div className="contact__details">
                     <h1>Contact Us</h1>
-                    <p>It is a long established fact that a readable content of a page when looking at its layout. </p>
+                    <p>Reach out to us for any kind of queries and help. Mail/Call us at - </p>
                     <div className="contact__info">
                         <img src={Phone}/><p>+91 6303618891</p>
                     </div>
                     <div className="contact__info">
-                        <img src={Mail}/><p>samarthnehe2000@gmail.com</p>
+                        <img src={Mail}/><p>webbedout00@gmail.com</p>
                     </div>
                     
                     <SocialMedia/>

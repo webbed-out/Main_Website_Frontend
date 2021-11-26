@@ -1,3 +1,4 @@
+import React,{useEffect} from 'react';
 import './App.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './components/home/Home';
@@ -6,6 +7,7 @@ import OurWork from './components/ourwork/OurWork';
 
 
 function App() {
+
   return (
     <Router>
         <div className="App">

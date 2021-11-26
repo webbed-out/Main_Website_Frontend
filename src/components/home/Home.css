@@ -1,5 +1,6 @@
 .home{
     height:auto;
+    
 }
 .landing__page{
     height:100vh;
@@ -7,6 +8,7 @@
     background-position:100% 0px,center;
     background-repeat:no-repeat,repeat;
     background-size: 60% 110%,auto;
+
 }
 
 @media only screen and (max-width: 800px){

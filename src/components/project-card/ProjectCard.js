@@ -1,33 +1,38 @@
 import React from 'react';
 import './ProjectCard.css';
-import git from '../../images/git.png';
+import website from '../../images/website.png';
 
-function ProjectCard({image,name,content,reverse}) {
+function ProjectCard({image,name,content,reverse,link}) {
     return (
         <>
-          {reverse ? 
-            <div className="project-card">
+          {reverse === 1 ? 
+            <div className="project-card" data-aos="fade-left" data-aos-duration="1000" >
                 
-                <div data-aos="fade-right" data-aos-duration="1000" className="project-card-right">
-                    <h1 style={{textAlign:"right"}}>{name}</h1>
-                    <p>{content}</p>
-                    <div className="work__social__media">
-                        <img src={git}/>
+                <div className="project-card-right"  >
+                    <div className="project-card-right-content">
+                        <h1 style={{textAlign:"right"}}>{name}</h1>
+                        <p>{content}</p>
+                    </div>
+                    
+                    <div className="work__social__media__reverse"  >
+                        <a href={link} target="_blank"><img src={website} /></a>
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" className="project-card-left">
+                <div  className="project-card-left-reverse">
                     <img src={image}/>
                 </div>
             </div>:
-            <div className="project-card">
-                <div data-aos="fade-right" data-aos-duration="1000" className="project-card-left">
+            <div className="project-card" data-aos="fade-right" data-aos-duration="1000" >
+                <div className="project-card-left" >
                     <img src={image}/>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" className="project-card-right">
-                    <h1>{name}</h1>
-                    <p>{content}</p>
+                <div className="project-card-right">
+                    <div className="project-card-right-content">
+                        <h1>{name}</h1>
+                        <p>{content}</p>
+                    </div>
                     <div className="work__social__media">
-                        <img src={git}/>
+                        <a href={link} target="_blank"><img src={website} /></a>
                     </div>
                 </div>
             </div>

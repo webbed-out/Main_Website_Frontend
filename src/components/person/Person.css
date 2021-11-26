@@ -41,6 +41,9 @@
 .person__social__media img{
     border-radius: 50%;
 }
+.person__photo img{
+    display:none;
+}
 
 
 
@@ -71,8 +74,11 @@
     }
     .person__photo img{
         display: block;
+        visibility: hidden;
+        height:50%;
     }
   
+    
     
   
 }
