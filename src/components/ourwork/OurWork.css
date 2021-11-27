@@ -16,3 +16,11 @@
     }
     
 }
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .our-work-landing{
+        background-image: url("../../images/WorkVector.png"),url("../../images/background-ui.png");
+        background-position:105% 0px,center;
+        background-repeat:no-repeat,repeat;
+        background-size: 75% 110%,auto;
+    }
+}

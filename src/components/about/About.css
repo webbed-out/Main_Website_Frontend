@@ -66,3 +66,44 @@
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 330px){
+    .about__right button{
+  
+        margin: 5px 0px; 
+    }
+    .about__right p{
+        padding:5px 0px;
+    }
+    .about__right h1{
+        overflow-y: hidden;   
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .about__container{
+        width: 90%;
+        padding: 20px 0px;
+    }
+    .about__left,.about__right{
+        flex:1;
+    }
+    .about__left img{
+        visibility:hidden;
+        height:100%;
+        width:100%;
+    }
+    .about__left{
+        background-image: url("../../images/about_svg.png");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .about__right p,.about__right button{
+        font-size:20px
+    }
+    .about__right h1{
+        font-size:40px  
+    }
+ 
+}

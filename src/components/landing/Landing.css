@@ -61,3 +61,30 @@
         flex-direction:column
     }
 }
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .home__page img{
+        height:60%;
+        width:60%;
+    }
+   
+    .home__left .social__media img{
+        height:50px;
+        width:50px;
+    }
+    .home__left h1{
+        font-size: 42px;
+    }
+
+ 
+    .home__left button{
+        font-size: 18px;
+        
+    }
+    .home__page{
+        max-width: 90%;
+    }
+    .home__left{
+        padding-right: 20px;
+    }
+}

@@ -13,7 +13,7 @@ function LandingAbout() {
                 <SocialMedia/>
             </div>
             <div className="about__pics">
-                <img data-aos="fade-down" data-aos-duration="1000" src={Pic2} height="253" width="387"/>
+                <img data-aos="fade-down" data-aos-duration="1000" className="about__pic1" src={Pic2} height="253" width="387"/>
                 <img data-aos="fade-up" data-aos-duration="1000" className="about__pic2" src={Pic1} height="325" width="510"/>
             </div>
         </div>

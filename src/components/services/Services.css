@@ -155,3 +155,18 @@
         flex-shrink: 0;
     }
 }
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .services__container h1{
+        font-size:44px;
+        padding-top: 50px;
+    }
+    .services__container{
+        width:90%;
+   
+    }
+    .services__container .services__card{
+
+        margin: 40px 0px;
+    }
+}

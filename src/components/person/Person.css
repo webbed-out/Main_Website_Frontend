@@ -77,6 +77,9 @@
         visibility: hidden;
         height:50%;
     }
+    .person__photo{
+        order: -1;
+    }
   
     
     

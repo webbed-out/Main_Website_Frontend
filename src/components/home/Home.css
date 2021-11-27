@@ -20,3 +20,12 @@
         background-size: auto;
     }
 }
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .landing__page{
+        
+        background-image: url("../../images/HomeVector.png"),url("../../images/background-ui.png");
+        background-position:100% 0px,center;
+        background-repeat:no-repeat,repeat;
+        background-size: 70% 110%,auto;
+    }
+}

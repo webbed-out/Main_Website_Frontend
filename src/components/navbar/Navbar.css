@@ -49,3 +49,16 @@
         display:block;
     }
 }
+
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .navbar img{
+        width:205px;
+        height:60px;
+    }
+    .navbar{
+        max-width:90%;
+    }
+    .navbar .navbar__items{
+        width:60% !important; 
+    }
+}

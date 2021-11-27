@@ -19,3 +19,10 @@
         background-size: auto;
     }
 }
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    .about-us-landing{
+    
+        background-image: url("../../images/Vectors.png"),url("../../images/background-ui.png");
+        background-size: 70% 200%,auto;
+    }
+}
