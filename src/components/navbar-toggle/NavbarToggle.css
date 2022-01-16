@@ -3,7 +3,7 @@
     width:0;
     overflow: hidden;
     background-color: var(--secondary);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 999;
     transition: 0.3s all ease-in-out;
