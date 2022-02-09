@@ -78,7 +78,7 @@
 
 @keyframes scrolling {
     0%{transform: translateX(0);}
-    100%{transform: translateX(-87.5vw);}
+    100%{transform: translateX(-100vw);}
     
 }
 
@@ -147,7 +147,7 @@
     }
     @keyframes scrolling {
         0%{transform: translateX(0);}
-        100%{transform: translateX(-200.62vw);}
+        100%{transform: translateX(-229.28vw);}
         
     }
     .marquee__content .tech{
