@@ -25,6 +25,7 @@ function Work() {
         <div className="work__right">
           <div className="work__images">
             <img
+              alt="image2"
               data-aos="fade-right"
               data-aos-duration="1000"
               className="work__pic2"
@@ -33,6 +34,7 @@ function Work() {
               width="620"
             />
             <img
+              alt="image2"
               data-aos="fade-left"
               data-aos-duration="1000"
               className="work__pic1"

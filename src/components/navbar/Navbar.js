@@ -29,6 +29,7 @@ function Navbar() {
       <div id="home" className="navbar__container">
         <div className="navbar">
           <img
+            alt="logo"
             onClick={() => (window.location.href = "/")}
             src={Logo}
             height="75px"
@@ -82,7 +83,9 @@ function Navbar() {
 
                 <Link to="contact" spy={true} smooth={true}>
                   <div className="navbar__contact">
-                    <a id="contact__button">Contact</a>
+                    <a href id="contact__button">
+                      Contact
+                    </a>
                   </div>
                 </Link>
               </div>
@@ -103,7 +106,9 @@ function Navbar() {
 
                 <Link to="contact" spy={true} smooth={true}>
                   <div className="navbar__contact">
-                    <a id="contact__button">Contact</a>
+                    <a href id="contact__button">
+                      Contact
+                    </a>
                   </div>
                 </Link>
               </div>

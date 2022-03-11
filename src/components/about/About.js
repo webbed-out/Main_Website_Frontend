@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
 import AboutSVg from "../../images/about_svg.png";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 function About() {
   const [para1, setPara1] = useState("");
   const [para2, setPara2] = useState("");
+  const localData = localStorage.getItem("website-data");
 
   useEffect(() => {
     let paragraph = [];
     async function getAboutDetails() {
-      const response = JSON.parse(localStorage.getItem("website-data"));
+      const response = JSON.parse(localData);
       if (response !== undefined) {
         const aboutDetails = response;
 
@@ -21,13 +20,13 @@ function About() {
       }
     }
     getAboutDetails();
-  }, [localStorage.getItem("website-data")]);
+  }, [localData]);
 
   return (
     <div id="about" className="about">
       <div className="about__container">
         <div className="about__left">
-          <img src={AboutSVg} height="486px" width="648px" />
+          <img alt="about-img" src={AboutSVg} height="486px" width="648px" />
         </div>
         <div
           className="about__right"

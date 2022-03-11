@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Landing.css";
 import HomePic from "../../images/SVG.png";
 import SocialMedia from "../social_media/SocialMedia";
-import axios from "axios";
 
 function Landing() {
   const [header, setHeader] = useState("");
@@ -10,11 +9,12 @@ function Landing() {
   const [description, setDescription] = useState("");
   const [headerFirst, setHeaderFirst] = useState("");
   const [headerSecond, setHeaderSecond] = useState("");
+  const localData = localStorage.getItem("website-data");
 
   useEffect(() => {
     var spaceIndex = [];
     async function getLandingDetails() {
-      const response = JSON.parse(localStorage.getItem("website-data"));
+      const response = JSON.parse(localData);
 
       if (response !== undefined) {
         setHeader(response[0].title);
@@ -40,7 +40,7 @@ function Landing() {
     }
 
     getLandingDetails();
-  }, [localStorage.getItem("website-data")]);
+  }, [localData]);
 
   return (
     <div className="home__page">
@@ -61,6 +61,7 @@ function Landing() {
         <SocialMedia />
       </div>
       <img
+        alt="landingImage"
         data-aos="fade-left"
         data-aos-duration="1000"
         src={HomePic}
