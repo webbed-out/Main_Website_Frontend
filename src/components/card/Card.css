@@ -1,63 +1,60 @@
-.card{
-    height:340px;
-    width:255px;
-    border-radius: 5px;
-    padding:30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color:white;
-    box-shadow: 4px 8px 18px rgba(0,0,0,0.35);
-
+.card {
+  height: 100%;
+  width: calc(30% - 60px);
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.35);
 }
-.card h1{
-    font-size:28px;
-    padding:20px 0px;
-    color:var(--secondary);
+.card h1 {
+  font-size: 28px;
+  padding: 20px 0px;
+  color: var(--secondary);
 }
-.card p{
-    text-align:center;
-    padding: 15px 0px;
-    line-height: 25px;
-}
-
-@media only screen and (max-width: 800px){
-    .card{
-        height:300px;
-        width:80%;
-        margin: 15px 0px;
-        padding:20px;
-        box-shadow: 2px 4px 10px rgba(0,0,0,0.35);
-
-    }
-    .card h1{
-        font-size:24px;
-        padding:20px 0px;
-        color:var(--secondary);
-    }
-    .card p{
-        overflow-y: hidden;
-    }
-    .card img{
-        height:60px;
-        width:60px;
-    }
+.card p {
+  text-align: center;
+  padding: 15px 0px;
+  line-height: 25px;
+  font-size: 16px;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1280px){
-    .card{
-        height:320px;
-        width:25%;
-        padding: 20px;
-    }
-    .card img{
-        height:60px;
-        width:60px;
-    }
-    .card h1{
-      
-        padding:10px 0px;
-      
-    }
+@media only screen and (max-width: 800px) {
+  .card {
+    height: 300px;
+    width: 80%;
+    margin: 15px 0px;
+    padding: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.35);
+  }
+  .card h1 {
+    font-size: 24px;
+    padding: 20px 0px;
+    color: var(--secondary);
+  }
+  .card p {
+    overflow-y: hidden;
+  }
+  .card img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .card {
+    height: 320px;
+    width: 25%;
+    padding: 20px;
+  }
+  .card img {
+    height: 60px;
+    width: 60px;
+  }
+  .card h1 {
+    padding: 10px 0px;
+  }
 }

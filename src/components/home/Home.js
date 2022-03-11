@@ -14,13 +14,17 @@ function Home() {
   useEffect(() => {
     axios
       .get(`https://webbedout-api.herokuapp.com/api/main-details`)
-      .then((response) => setLoader(false))
+      .then((response) => {
+        localStorage.setItem("website-data", JSON.stringify(response.data));
+        localStorage.setItem("dataFetched", true);
+        setLoader(false);
+      })
       .catch((err) => console.log(err));
   }, []);
 
   return (
     <div className="home">
-      {loader ? (
+      {localStorage.getItem("dataFetched") === null && loader ? (
         <Loader />
       ) : (
         <>

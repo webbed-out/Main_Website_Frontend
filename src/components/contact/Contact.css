@@ -1,113 +1,124 @@
-.contact{
-    height:70vh;
-    width:100%;
-    background-color: var(--lightdark);
+.contact {
+  height: 70vh;
+  width: 100%;
+  background-color: var(--lightdark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact__container{
-    width:80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    color: white;
-    padding:150px 0px 10px 0px;
+.contact__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
 }
-.contact__details,.contact__question,.contact__quick{
-    flex: 1;
+.contact__details,
+.contact__question,
+.contact__quick {
+  flex: 1;
 }
-.contact__container .contact__quick{
-    text-align: center;
-    display: flex;
-    flex-direction:column;
+.contact__container .contact__quick {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.contact__container .contact__quick a{
-    text-decoration: none;
-    color: white;
+.contact__container .contact__quick a {
+  text-decoration: none;
+  color: white;
+}
+.contact__container .contact__quick h1,
+.contact__details h1,
+.contact__question h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+.contact__container .contact__quick a,
+.contact__details p {
+  font-size: 24px;
+  padding: 8px;
+  font-weight: 300;
+  line-height: 30px;
+}
 
+.contact__quick a {
+  cursor: pointer;
 }
-.contact__container .contact__quick h1, .contact__details h1, .contact__question h1{
-    font-size:36px;
-    margin-bottom:10px;
-    color: var(--primary);
+.contact__question {
+  height: 100%;
 }
-.contact__container .contact__quick a, .contact__details p{
-    font-size: 24px;
-    padding: 8px;
-    font-weight: 300;
-    line-height:30px
-}
-
-.contact__quick a{
-    cursor: pointer;
-}
-
-.contact__question .form{
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-    flex-direction: column;
+.contact__question .form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .contact__question .form input {
-    height:30px;
+  height: 30px;
+  width: 90%;
+  background-color: var(--light);
+}
+.contact__question .form textarea {
+  width: 90%;
+  background-color: var(--light);
+}
+.contact__question .form input,
+.contact__question .form textarea {
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.contact__details .contact__info {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__details,
+  .contact__question,
+  .contact__quick {
+    width: 100%;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact__details h1 {
+    text-align: center;
+  }
+  .contact__details p {
+    font-size: 18px;
+  }
+  .contact__details,
+  .contact__question,
+  .contact__quick {
+    margin: 10px 0px;
+  }
+  .contact__details .social__media {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact__question .form input {
+    width: 100%;
+  }
+  .contact__question .form textarea {
+    width: 100%;
+  }
+  .contact__container {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .contact__container {
     width: 90%;
-    background-color: var(--light);
-}
-.contact__question .form textarea{
-    width:90%;
-    background-color: var(--light);
-}
-.contact__question .form input , .contact__question .form textarea{
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 15px;
-}
-.contact__details .contact__info{
-    display: flex;
-}
-
-@media only screen and (max-width: 800px){
-    .contact__container{
-        flex-direction: column;
-    }
-    .contact__details,.contact__question,.contact__quick{
-        width:100%;
-    }
-    .contact{
-        height:auto;
-        
-    }
-    .contact__details h1{
-        text-align:center;
-    }
-    .contact__details p{
-        font-size:18px;
-    }
-    .contact__details,.contact__question,.contact__quick{
-        margin:10px 0px;
-    }
-    .contact__details .social__media{
-        width:80%;
-        margin: 0 auto;
-    }
-    .contact__question .form input {
-        width: 100%;
-    }
-    .contact__question .form textarea{
-        width:100%;
-    }.contact__container{
-       padding: 40px 0px;
-    }
-    
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1280px){
-    .contact__container{
-        width:90%;
-        padding:120px 0px 10px 0px;
-    }
-    .contact{
-        height:auto;
-
-    }
+    padding: 120px 0px 10px 0px;
+  }
+  .contact {
+    height: auto;
+  }
 }
