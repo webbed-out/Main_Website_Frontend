@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Landing.css";
-import HomePic from "../../images/SVG.png";
+import HomePic from "../../images/landingimg.png";
 import SocialMedia from "../social_media/SocialMedia";
 
 function Landing() {
@@ -65,8 +65,9 @@ function Landing() {
         data-aos="fade-left"
         data-aos-duration="1000"
         src={HomePic}
-        height="430px"
+        height="550px"
         width="625px"
+        className="landingImg"
       />
     </div>
   );

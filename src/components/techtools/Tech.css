@@ -1,6 +1,6 @@
 .tech {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -9,8 +9,6 @@
 }
 .tech img {
   transform: scale(0.5);
-  margin-bottom: -15%;
 }
 .tech p {
-  padding-top: 8%;
 }

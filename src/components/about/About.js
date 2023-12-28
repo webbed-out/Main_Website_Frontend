@@ -25,21 +25,23 @@ function About() {
   return (
     <div id="about" className="about">
       <div className="about__container">
-        <div className="about__left">
-          <img alt="about-img" src={AboutSVg} height="486px" width="648px" />
-        </div>
-        <div
-          className="about__right"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1000"
-        >
-          <h1>Who are we?</h1>
-          <p>{para1}</p>
-          <p>{para2}</p>
-          <button onClick={() => (window.location.href = "/about-us")}>
-            Meet our Team
-          </button>
+        <h1>About Us</h1>
+        <p className="para">{para1}</p>
+        <div className="about__flex">
+          <div className="about__left">
+            <img alt="about-img" src={AboutSVg} height="440px" width="572px" />
+          </div>
+          <div
+            className="about__right"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
+            <p>{para2}</p>
+            <button onClick={() => (window.location.href = "/about-us")}>
+              Meet our Team
+            </button>
+          </div>
         </div>
       </div>
     </div>

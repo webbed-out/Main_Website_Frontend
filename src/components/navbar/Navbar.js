@@ -18,9 +18,7 @@ function Navbar() {
 
   const handleToggle = () => {
     var SideBar = document.getElementById("sidebar");
-    SideBar.style.padding = "10%";
-
-    SideBar.style.width = "80vw";
+    SideBar.style.height = "100vh";
   };
 
   return (
@@ -32,8 +30,9 @@ function Navbar() {
             alt="logo"
             onClick={() => (window.location.href = "/")}
             src={Logo}
-            height="75px"
-            width="260px"
+            height="70px"
+            width="240px"
+            className="logo"
           />
           <div className="toggle" onClick={() => handleToggle()}>
             <MenuIcon fontSize="large" style={{ color: "rgb(30,30,30)" }} />
@@ -81,13 +80,16 @@ function Navbar() {
                   Team
                 </Link>
 
-                <Link to="contact" spy={true} smooth={true}>
-                  <div className="navbar__contact">
-                    <a href id="contact__button">
-                      Contact
-                    </a>
-                  </div>
-                </Link>
+                <div className="navbar__contact">
+                  <Link
+                    id="contact__button"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                  >
+                    Contact
+                  </Link>
+                </div>
               </div>
             </>
           )}
@@ -104,13 +106,16 @@ function Navbar() {
                   Our Work
                 </Link>
 
-                <Link to="contact" spy={true} smooth={true}>
-                  <div className="navbar__contact">
-                    <a href id="contact__button">
-                      Contact
-                    </a>
-                  </div>
-                </Link>
+                <div className="navbar__contact">
+                  <Link
+                    id="contact__button"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                  >
+                    Contact
+                  </Link>
+                </div>
               </div>
             </>
           )}

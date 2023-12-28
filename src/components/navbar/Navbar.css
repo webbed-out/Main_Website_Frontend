@@ -21,28 +21,39 @@
   align-items: center;
   width: 50%;
   font-size: 24px;
-  color: white;
+  color: rgb(14, 14, 14);
 }
 .navbar .navbar__items .navlinks:hover {
   color: black;
 }
-.navbar__contact:hover #contact__button {
-  color: black;
+.navbar__contact {
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 15px 30px -12px rgb(0 0 0 / 20%);
 }
 .navbar__contact:hover {
-  color: black;
-  border: 2px solid black;
+  background-color: rgb(4, 78, 131);
+  border: 1px solid rgb(4, 78, 131);
 }
-.navbar__contact {
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 15px;
-  cursor: pointer;
+.navbar__contact a {
+  color: white !important;
+}
+.navbar__contact a:hover {
+  color: white !important;
 }
 .navbar .navbar__items a {
   text-decoration: none;
-  color: white;
+  color: rgb(14, 14, 14);
   cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navbar .navbar__items .navlinks:hover {
+  color: rgb(4, 78, 131) !important;
 }
 
 @media only screen and (max-width: 800px) {

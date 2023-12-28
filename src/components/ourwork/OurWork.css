@@ -1,26 +1,27 @@
-.our-work-landing{
-    height:100vh;
-    background-image: url("../../images/WorkVector.png"),url("../../images/background-ui.png");
-    background-position:105% 0px,center;
-    background-repeat:no-repeat,repeat;
-    background-size: 60% 110%,auto;
+.our-work-landing {
+  height: 100vh;
+  background-image: url("../../images/HomeVector.png"),
+    url("../../images/background-ui.png");
+  background-position: center, center;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
 }
 
-@media only screen and (max-width: 800px){
-    .our-work-landing{
-        height:100vh;
-        background-image: url("../../images/background-ui.png");
-        background-position:center;
-        background-repeat:repeat;
-        background-size:auto;
-    }
-    
+@media only screen and (max-width: 800px) {
+  .our-work-landing {
+    height: 100vh;
+    background-image: url("../../images/background-ui.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+  }
 }
-@media only screen and (min-width: 800px) and (max-width: 1280px){
-    .our-work-landing{
-        background-image: url("../../images/WorkVector.png"),url("../../images/background-ui.png");
-        background-position:105% 0px,center;
-        background-repeat:no-repeat,repeat;
-        background-size: 75% 110%,auto;
-    }
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .our-work-landing {
+    background-image: url("../../images/HomeVector.png"),
+      url("../../images/background-ui.png");
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;
+  }
 }

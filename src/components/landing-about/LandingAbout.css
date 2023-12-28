@@ -32,7 +32,7 @@
   color: var(--primary);
 }
 .about__pics img {
-  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.55);
+  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.35);
 }
 .about__pics .about__pic2 {
   margin-top: -100px;
@@ -48,12 +48,13 @@
   }
   .landing__about__left {
     padding: 0px;
+    margin-top: -7.5vh;
   }
   .landing__about__left p {
     font-size: 18px;
   }
   .landing-about {
-    margin: 50px auto 0px auto !important;
+    margin: 0px auto 0px auto !important;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
@@ -62,8 +63,9 @@
   }
   .about__pics .about__pic2 {
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .landing__about__left,
   .about__pics {
@@ -74,5 +76,6 @@
   }
   .about__pics {
     align-self: stretch;
+    position: relative;
   }
 }

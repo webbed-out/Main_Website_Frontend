@@ -1,29 +1,16 @@
-import React,{useEffect,useState} from 'react';
-import './Tech.css';
-import axios from 'axios';
+import React from "react";
+import "./Tech.css";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
-function Tech({name,image}) {
-
-    const [tech,setTech] = useState([]);
-
-    useEffect(()=>{
-
-        async function getTechStackDetails(){
-            const response = await axios.get(`https://webbedout-api.herokuapp.com/api/tech-stacks`);
-            setTech(response.data);
-
- 
-        };
-        getTechStackDetails();
-        
-    },[])
-
-    return (
-        <div className="tech">
-            <img src={image}/>
-            <p>{name}</p> 
-        </div>
-    )
+function Tech({ name, image }) {
+  return (
+    <div className="tech">
+      <Tippy content={<span>{name}</span>}>
+        <img src={image} />
+      </Tippy>
+    </div>
+  );
 }
 
-export default Tech
+export default Tech;

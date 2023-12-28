@@ -1,10 +1,21 @@
 .contact {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   background-color: var(--lightdark);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__box1 {
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  flex: 1;
+  padding: 35px 0px;
+  border-top: 1px solid rgb(92, 92, 92);
+  border-bottom: 1px solid rgb(92, 92, 92);
 }
 
 .contact__container {
@@ -32,13 +43,13 @@
 .contact__container .contact__quick h1,
 .contact__details h1,
 .contact__question h1 {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 10px;
   color: var(--primary);
 }
 .contact__container .contact__quick a,
 .contact__details p {
-  font-size: 24px;
+  font-size: 20px;
   padding: 8px;
   font-weight: 300;
   line-height: 30px;
@@ -74,7 +85,21 @@
 .contact__details .contact__info {
   display: flex;
 }
-
+.copyright {
+  width: 100%;
+  background-color: #252525;
+}
+.copyright-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0px;
+}
+.copyright-container h2 {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 20px;
+}
 @media only screen and (max-width: 800px) {
   .contact__container {
     flex-direction: column;
@@ -110,6 +135,16 @@
   }
   .contact__container {
     padding: 40px 0px;
+  }
+  .contact__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright-container h2{
+    font-size:16px
   }
 }
 
