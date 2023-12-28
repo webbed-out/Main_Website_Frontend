@@ -1,7 +1,7 @@
-import React from "react";
-import "./Tech.css";
-import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css";
+import React from 'react';
+import './Tech.css';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 function Tech({ name, image }) {
   return (

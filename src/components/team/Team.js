@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from "react";
-import "./Team.css";
-import Person from "../person/Person";
-import Person1 from "../../images/Person1.png";
-import Person2 from "../../images/Person2.png";
-import Person3 from "../../images/Person3.png";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import './Team.css';
+import Person from '../person/Person';
+import axios from 'axios';
+import { apiPaths, WEBBEDOUT_API_ENDPOINT } from '../../configs/webbedOutConfig';
 
 function Team() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
     async function getTeamsDetails() {
-      const response = await axios.get(
-        `https://webbedout-api.herokuapp.com/api/team`
-      );
+      const response = await axios.get(`${WEBBEDOUT_API_ENDPOINT}${apiPaths.team}`);
       setTeam(response.data);
       console.log(response.data);
     }
@@ -30,7 +26,6 @@ function Team() {
         {team.map((person, index) => {
           return (
             <Person
-              reverse={index % 2}
               name={person.name}
               content={person.description}
               image={person.photo}

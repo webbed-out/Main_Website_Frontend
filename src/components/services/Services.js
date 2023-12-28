@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./Services.css";
-import Card from "../card/Card";
-import Tech from "../techtools/Tech";
+import React, { useState, useEffect } from 'react';
+import './Services.css';
+import Card from '../card/Card';
+import Tech from '../techtools/Tech';
 
-import axios from "axios";
+import axios from 'axios';
+import { apiPaths, WEBBEDOUT_API_ENDPOINT } from '../../configs/webbedOutConfig';
 
 function Services() {
   const [tech, setTech] = useState([]);
@@ -11,15 +12,11 @@ function Services() {
 
   useEffect(() => {
     async function getServicesDetails() {
-      const response = await axios.get(
-        `https://webbedout-api.herokuapp.com/api/services`
-      );
+      const response = await axios.get(`${WEBBEDOUT_API_ENDPOINT}${apiPaths.services}`);
       setServices(response.data);
     }
     async function getTechStackDetails() {
-      const response = await axios.get(
-        `https://webbedout-api.herokuapp.com/api/tech-stacks`
-      );
+      const response = await axios.get(`${WEBBEDOUT_API_ENDPOINT}${apiPaths.techStack}`);
       setTech(response.data);
     }
     getServicesDetails();
@@ -36,13 +33,7 @@ function Services() {
 
         <div className="services__card">
           {services.map((item) => {
-            return (
-              <Card
-                header={item.title}
-                content={item.description}
-                image={item.logo}
-              />
-            );
+            return <Card header={item.title} content={item.description} image={item.logo} />;
           })}
         </div>
       </div>

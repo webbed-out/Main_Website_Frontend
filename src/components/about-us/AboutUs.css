@@ -3,11 +3,11 @@
 }
 .about-us-landing {
   height: 100vh;
-  background-image: url("../../images/HomeVector.png"),
+  background-image: url("../../images/TeamVectors.png"),
     url("../../images/background-ui.png");
-  background-position: center, center;
+  background-position: 100%, center;
   background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
+  background-size: contain, auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -21,7 +21,7 @@
 }
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
   .about-us-landing {
-    background-image: url("../../images/HomeVector.png"),
+    background-image: url("../../images/TeamVectors.png"),
       url("../../images/background-ui.png");
     background-size: cover, auto;
   }

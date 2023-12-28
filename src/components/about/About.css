@@ -1,6 +1,6 @@
 .about {
   height: auto;
-  min-height: 60vh;
+  min-height: 90vh;
   background-image: url("../../images/background-ui.png");
   background-size: auto;
   background-repeat: repeat;
@@ -58,7 +58,7 @@
   font-weight: 400;
 }
 .about__right button {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   border-radius: 5px;
   color: white;
   outline: none;
@@ -67,7 +67,7 @@
   margin: 20px 0px;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0px 5px 30px rgb(0 148 255 / 40%);
+  /* box-shadow: 0px 5px 30px rgb(0 148 255 / 40%); */
 }
 .about__right button:hover {
   background-color: rgb(4, 78, 131);

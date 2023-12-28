@@ -1,0 +1,11 @@
+.error-screen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subTitle{
+    padding-top:20px
+}

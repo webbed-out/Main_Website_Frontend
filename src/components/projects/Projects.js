@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "./Projects.css";
-import ProjectCard from "../project-card/ProjectCard";
-import Project1 from "../../images/Project1.png";
-import Amazon from "../../images/amazon.png";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import './Projects.css';
+import ProjectCard from '../project-card/ProjectCard';
+import Project1 from '../../images/Project1.png';
+import Amazon from '../../images/amazon.png';
+import axios from 'axios';
+import { apiPaths, WEBBEDOUT_API_ENDPOINT } from '../../configs/webbedOutConfig';
 
 function Projects() {
   const [works, setWorks] = useState([]);
 
   useEffect(() => {
     async function getWorksDetails() {
-      const response = await axios.get(
-        `https://webbedout-api.herokuapp.com/api/work`
-      );
+      const response = await axios.get(`${WEBBEDOUT_API_ENDPOINT}${apiPaths.work}`);
       setWorks(response.data);
     }
     getWorksDetails();

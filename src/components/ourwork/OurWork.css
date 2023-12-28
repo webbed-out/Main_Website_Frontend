@@ -1,10 +1,10 @@
 .our-work-landing {
   height: 100vh;
-  background-image: url("../../images/HomeVector.png"),
+  background-image: url("../../images/WorkVector.png"),
     url("../../images/background-ui.png");
-  background-position: center, center;
+  background-position: 100%, center;
   background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
+  background-size: 60%, auto;
 }
 
 @media only screen and (max-width: 800px) {

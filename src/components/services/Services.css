@@ -1,10 +1,11 @@
 .services {
   min-height: 85vh;
   width: 100%;
-  background-image: url("../../images/blueDesign.png");
+  /* background-image: url("../../images/blueDesign.png"); */
+  background-color: rgba(0,166, 251, 0.25);
   background-size: auto;
   background-repeat: repeat;
-  box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%);
+  /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +30,13 @@
   text-transform: uppercase;
   color: #3f6b8b;
   letter-spacing: 1px;
+ 
 }
 .services__container h1 {
   text-align: center;
   font-size: 52px;
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 .services__container .services__card {
   display: flex;

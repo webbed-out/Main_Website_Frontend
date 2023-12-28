@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import "./Landing.css";
-import HomePic from "../../images/landingimg.png";
-import SocialMedia from "../social_media/SocialMedia";
+import React, { useEffect, useState } from 'react';
+import './Landing.css';
+import HomePic from '../../images/landingimg.png';
+import SocialMedia from '../social_media/SocialMedia';
 
 function Landing() {
-  const [header, setHeader] = useState("");
+  const [header, setHeader] = useState('');
 
-  const [description, setDescription] = useState("");
-  const [headerFirst, setHeaderFirst] = useState("");
-  const [headerSecond, setHeaderSecond] = useState("");
-  const localData = localStorage.getItem("website-data");
+  const [description, setDescription] = useState('');
+  const [headerFirst, setHeaderFirst] = useState('');
+  const [headerSecond, setHeaderSecond] = useState('');
+  const localData = localStorage.getItem('website-data');
 
   useEffect(() => {
     var spaceIndex = [];
@@ -20,17 +20,17 @@ function Landing() {
         setHeader(response[0].title);
         setDescription(response[0].description);
 
-        spaceIndex = response[0].title.split(" ");
+        spaceIndex = response[0].title.split(' ');
         console.log(spaceIndex);
-        var first = "";
+        var first = '';
         for (let i = 0; i < 4; i++) {
           first += spaceIndex[i];
-          first += " ";
+          first += ' ';
         }
-        var second = "";
+        var second = '';
         for (let i = 5; i < spaceIndex.length; i++) {
           second += spaceIndex[i];
-          second += " ";
+          second += ' ';
         }
 
         setHeaderFirst(first);
@@ -44,20 +44,14 @@ function Landing() {
 
   return (
     <div className="home__page">
-      <div
-        className="home__left"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
+      <div className="home__left" data-aos="fade-right" data-aos-duration="1000">
         <h1>
           {headerFirst}
           <span>{header} </span>
           {headerSecond}
         </h1>
         <p>{description}</p>
-        <button onClick={() => (window.location.href = "/our-work")}>
-          Check our work
-        </button>
+        <button onClick={() => (window.location.href = '/our-work')}>Check our work</button>
         <SocialMedia />
       </div>
       <img
